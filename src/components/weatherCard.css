@@ -10,18 +10,13 @@ img{
 }
 
 .App{
-    width: 100%;
     min-height: 100vh;
     background-size: cover;
     background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-   
     background: url('../components/img/FONDS3.jpg') no-repeat;
     background-size: cover;
     background-position: center;
-    animation: animate 20s infinite;
+    animation: animate 30s infinite;
 }
 
 @keyframes animate {
@@ -45,12 +40,16 @@ img{
 }
 
 .container-b{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 500px;
+    min-width: 200px; 
     backdrop-filter: blur(10px);
     border: 1px white solid;
     box-shadow: 5px 5px 5px rgb(255, 255, 255);
-    padding: 1.5rem 3rem;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 1rem 1.5rem;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -285,9 +284,59 @@ h3{
 }
 
 @media only screen and (max-width: 360px){
-    .container-b{
-        padding: 1.5rem 1.5rem;
+   
+
+    .title{
+        font-size: 1.7rem;
     }
+
+    .search-space{
+        height: 20px;
+        font-size: 9px;
+    }
+    .button1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.7rem;
+        height: 10px;
+        font-size: 9px;
+        text-align: center;
+    }
+    .animate__backInDown{
+        font-size: 20px;
+    }
+    .imgclima{
+        width: 80px;
+    }
+    .b1{
+        font-size: 14px;
+    }
+    .animate__fadeInUpBig{
+        padding: 1px;
+        font-size: 14px;
+    }
+    .grades{
+        padding: 0.5rem;
+        text-align: center;
+    }
+    .animate__headShake{
+        
+        font-size: 14px;
+    }
+    .button2{
+        font-size: 10px;
+    }
+    .loading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 376px){
+    
 
     .title{
         font-size: 1.7rem;
@@ -335,53 +384,15 @@ h3{
     }
 }
 
-@media only screen and (max-width: 376px){
-    .container-b{
-        padding: 1.5rem 1.5rem;
-    }
 
-    .title{
-        font-size: 1.7rem;
-    }
 
-    .search-space{
-        height: 20px;
-        font-size: 9px;
-    }
-    .button1{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0.7rem;
-        height: 10px;
-        font-size: 9px;
-        text-align: center;
-    }
-    .animate__backInDown{
-        font-size: 20px;
-    }
-    .imgclima{
-        width: 80px;
-    }
-    .b1{
-        font-size: 14px;
-    }
-    .animate__fadeInUpBig{
-        padding: 1px;
-        font-size: 14px;
-    }
-    .grades{
-        padding: 0.5rem;
-        text-align: center;
-    }
-    .animate__headShake{
-        
-        font-size: 14px;
-    }
-    .button2{
-        font-size: 10px;
+@media only screen and (max-width: 400px){
+    .App{
+        font-size: 13px;
     }
     .loading{
         text-align: center;
     }
+   
+
 }
